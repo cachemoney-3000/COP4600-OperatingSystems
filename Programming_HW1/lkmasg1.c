@@ -196,10 +196,13 @@ static ssize_t write(struct file *filep, const char *buffer, size_t len, loff_t 
 
 	printk(KERN_INFO "lkmasg1: Received %zu characters from the user\n", len);
 	return len;
+	
 }
 
 
 module_init(initialize);
-module_exit(clear);
+module_exit(clear); 	
+
+
 
 
