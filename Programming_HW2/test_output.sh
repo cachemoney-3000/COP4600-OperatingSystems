@@ -1,6 +1,6 @@
 #!/bin/bash
 
 while true; do
-  cat /dev/lkmasg1_out
+  cat /dev/pa2_out
 done
 

@@ -1,5 +1,5 @@
 /**
- * File:	lkmasg1_input.c
+ * File:	pa2_in.c
  * Adapted for Linux 5.15 by: Joshua Samontanez
  * Class:	COP4600-SP23
  */
@@ -13,7 +13,7 @@
 #include <linux/vmalloc.h>
 
 
-#define DEVICE_NAME "lkmasg1_in" // Device name.
+#define DEVICE_NAME "pa2_in" // Device name.
 #define CLASS_NAME "char_in"	  ///< The device class -- this is a character device driver
 #define MAX_SIZE 1024		  // Maximum size of buffer 
 

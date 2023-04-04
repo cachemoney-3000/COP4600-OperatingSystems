@@ -1,5 +1,5 @@
 /**
- * File:	lkmasg1_output.c
+ * File:	pa2_out.c
  * Adapted for Linux 5.15 by: Joshua Samontanez
  * Class:	COP4600-SP23
  */
@@ -11,9 +11,9 @@
 #include <linux/uaccess.h>	  // User access copy function support.
 #include <linux/vmalloc.h>
 #include <linux/mutex.h>
-#include "lkmasg1_in.h"
+#include "pa2_in.h"
 
-#define DEVICE_NAME "lkmasg1_out" // Device name.
+#define DEVICE_NAME "pa2_out" // Device name.
 #define CLASS_NAME "char_out"	  ///< The device class -- this is a character device driver
 #define MAX_SIZE 1024		  // Maximum size of buffer 
 
