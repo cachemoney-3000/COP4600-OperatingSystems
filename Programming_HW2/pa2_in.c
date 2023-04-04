@@ -29,7 +29,6 @@ EXPORT_SYMBOL(input_mutex);
  * Important variables that store data and keep track of relevant information.
  */
 static int major_number;
-static short message_size;
 static int open_counter = 0;
 
 struct shared_data {
