@@ -1,5 +1,5 @@
-obj-m += pa2_out.o
 obj-m += pa2_in.o
+obj-m += pa2_out.o
 
 KDIR ?= /lib/modules/$(shell uname -r)/build
 

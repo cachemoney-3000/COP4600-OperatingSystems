@@ -11,7 +11,6 @@
 #include <linux/uaccess.h>	  // User access copy function support.
 #include <linux/vmalloc.h>
 #include <linux/mutex.h>
-#include "pa2_in.h"
 
 #define DEVICE_NAME "pa2_out" // Device name.
 #define CLASS_NAME "char_out"	  ///< The device class -- this is a character device driver
@@ -32,6 +31,10 @@ static int open_counter = 0;
 static struct class *lkmasg1_output_class = NULL;	///< The device-driver class struct pointer
 static struct device *lkmasg1_output_device = NULL; ///< The device-driver device struct pointer
 
+struct shared_data {
+    char message[MAX_SIZE];
+    short message_size; 
+};
 extern struct shared_data *shared_memory;
 extern struct mutex input_mutex;
 
